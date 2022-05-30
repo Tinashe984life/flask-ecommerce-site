@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="content2">
+        <div class="products-container">
+            <ul class="products">
+                
+                <li>
+                    <a href="{{ url_for('capetown2') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/summerdress.jpeg') }}" > 
+                        <div class="nl"><small>Polka Dot Summer Dress - </small><span class="price">R220</span></div>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="{{ url_for('harleyshirt') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/floraldress.png') }}" >
+                        <div class="nl"><small>Floral Summer Dress - </small><span class="price">R290</span><span class="sale">Sale</span></div> 
+                    </a>   
+                </li>
+                <li>
+                    <a href="{{ url_for('bronzeshirt2') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/zimmermann mae amber palm.jpg') }}" > 
+                        <div class="product-label nl"><small>Zimmermann Summer Dress - </small><span class="price">R350</span></div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="{{ url_for('kiss') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/floraldress2.png') }}" >
+                        <div class="nl"><small>Floral Summer Dress - </small><span class="price">R300</span><span class="sale">Sale</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('popsmoke') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/floraldress3.png') }}" > 
+                        <div class="nl"><small>Floral Summer Dress - </small><span class="price">R325</span></div>
+                    </a>                   
+                </li>       
+                <li>
+                    <a href="{{ url_for('retroplanet1') }}">
+                        <img class="product-img n" src="{{ url_for('static', filename='images/wintercoat.png') }}" >
+                        <div class="nl"><small>Winter Fur Coat - </small><span class="price">R360</span></div>
+                    </a>                     
+                </li>
+                <li>
+                    <a href="{{ url_for('retroplanet2') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/wintercoat2.png') }}" >
+                        <div class="nl"><small>Winter Fur Coat - </small><span class="price">R340</span></div>
+                    </a>                     
+                </li>
+                
+                <li>
+                    <a href="{{ url_for('retroplanet3') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/fauxfurjacket.jpg') }}" >
+                        <div class="nl"><small>Faux Fur Jacket - </small><span class="price">R360</span></div>
+                    </a> 
+                </li>
+                <li>
+                    <a href="{{ url_for('retroplanet3') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/furcoat.jpg') }}" >
+                        <div class="nl"><small>Winter Fur Coat - </small><span class="price">R590</span></div>
+                    </a> 
+                </li>
+                <li>
+                    <a href="{{ url_for('retroplanet3') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/hellyhansencoat.png') }}" >
+                        <div class="nl"><small>Helly Hansen Leather Coat - </small><span class="price">R630</span></div>
+                    </a> 
+                </li>
+                
+                <li>
+                    <a href="{{ url_for('retroplanet3') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/shearling faux fur coat.jpg') }}" >
+                        <div class="nl"><small>Shearling Faux Fur Coat - </small><span class="price">R590</span></div>
+                    </a> 
+                </li>
+                
+                
+                
+                
+                
+            </ul>
+        </div>
+    </div>
+{% endblock %}

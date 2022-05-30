@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="product-view">
+        <div>
+            <img class="p-view" src="{{ url_for('static', filename='images/wheatiesfootball.jpg') }}">
+        </div>
+        <div>
+            <h3>Wheaties Football Tee</h3>
+            <p>R140</p>
+            <h4>Description</h4>
+            <p>Wheaties Football Tee - 79 Nostalgia Print</p>
+            <br>
+            <div>
+                <h3>Colour</h3>
+                <img class="colour-img" src="{{ url_for('static', filename='images/wheatiesfootball.jpg') }}">
+                <br>
+                <small>Orange</small>
+            </div>
+            <br>
+            <div class="cart-form">
+                <form method="post">
+                    <input class="addtocart" type="submit" name="addtocart" value="add to cart">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

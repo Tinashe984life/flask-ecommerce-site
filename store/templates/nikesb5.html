@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="product-view">
+        <div>
+            <img class="p-view" src="{{ url_for('static', filename='images/nikew2.png') }}">
+        </div>
+        <div>
+            <h3>Nike SB - Women's Dunk</h3>
+            <p>R955</p>
+            <h4>Description</h4>
+            <p>Nike SB - Women's Dunk (high top - brown sole)</p>
+            <br>
+            <div>
+                <h3>Colour</h3>
+                <img class="colour-img" src="{{ url_for('static', filename='images/nikew2.png') }}">
+                <br>
+                <small>Pink</small>
+            </div>
+            <br>
+            <div class="cart-form">
+                <form method="post">
+                    <input class="addtocart" type="submit" name="addtocart" value="add to cart">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

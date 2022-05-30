@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for message in get_flashed_messages() %}
+	
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  {{ message }}
+	  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+
+	
+{% endfor %}
+    <div class="content">
+        <div class="banner">
+            <div class="banner-header">
+                <h3>MUST HAVE TEES</h3><small class="see-all"><a href="{{ url_for('tees') }}">See All</a></small>
+            </div>
+            <div class="banner-container" >
+                <div class="banner-img-container">
+                    <img  class="bronzeshirt" src="{{ url_for('static', filename='images/bronzeshirt.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="bronzeshirt2" src="{{ url_for('static', filename='images/bronzeshirt2.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="harleyshirt" src="{{ url_for('static', filename='images/harleyshirt.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="capetown" src="{{ url_for('static', filename='images/capetown.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="capetown" src="{{ url_for('static', filename='images/capetown2.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="capetown" src="{{ url_for('static', filename='images/kiss.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="capetown" src="{{ url_for('static', filename='images/popsmoke.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="capetown" src="{{ url_for('static', filename='images/retroplanetcallahan.jpg') }}">
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <div class="banner3">
+            <div class="b3-title">
+                <h4>Nike SB Zoom Dunk</h4>
+                
+            </div>
+            <img  class="nike3" src="{{ url_for('static', filename='images/nikesbzoomdunk.png') }}">
+            <div class="shop-now1">
+                <a href="{{ url_for('footwear') }}">
+                    <button class="shopnow">Shop Now</button>
+                </a>
+            </div>
+            
+        </div>
+        <br>
+        <div class="banner-header2">
+            <h3>Ladies Winter Jackets & Coats</h3><button class="shopnow2">Shop Now</button>
+        </div>
+        <br>
+        <div class="banner4">
+            <div class="coatad-container">
+                <img class="coatsad" src="{{ url_for('static', filename='images/womenjacket2.jpg') }}">
+            </div>
+            <div class="coatad-container">
+                <img class="coatsad2" src="{{ url_for('static', filename='images/womencoat2.jpeg') }}">
+            </div>
+            
+            <!--<img class="coatsad" src="{{ url_for('static', filename='images/womenjacket2.jpg') }}">-->
+        </div>
+        </div>
+        <br>
+        <!--<div class="banner2">
+            <div class="banner-header">
+                <h3>Sneakers Closet</h3><small class="see-all"><a href="#">See All</a></small>
+            </div>
+            <div class="banner-container2" >
+                <div class="banner-img-container">
+                    <img  class="nike" src="{{ url_for('static', filename='images/nike.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="nike" src="{{ url_for('static', filename='images/nike2.jpg') }}">
+                </div>
+                <div class="banner-img-container">
+                    <img  class="nike" src="{{ url_for('static', filename='images/superstar.jpg') }}">
+                </div>
+                
+            </div>
+        </div>-->
+    </div>
+    
+
+    
+{% endblock %}

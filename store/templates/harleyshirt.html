@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="product-view">
+        <div>
+            <img class="p-view" src="{{ url_for('static', filename='images/harleyshirt.jpg') }}">
+        </div>
+        <div>
+            <h3>Harley Davidson Tee</h3>
+            <p>R350</p>
+            <h4>Description</h4>
+            <p>Harley Davidson Tee - Classic Print</p>
+            <br>
+            <div>
+                <h3>Colour</h3>
+                <img class="colour-img" src="{{ url_for('static', filename='images/harleyshirt.jpg') }}">
+                <br>
+                <small>Black & Orange</small>
+            </div>
+            <br>
+            <div class="cart-form">
+                <form method="post">
+                    <input class="addtocart" type="submit" name="addtocart" value="add to cart">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

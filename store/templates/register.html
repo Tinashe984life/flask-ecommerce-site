@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for message in get_flashed_messages() %}
+	
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  {{ message }}
+	  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+
+	
+{% endfor %}
+    <div>
+        <form method="post"> 
+            {{ form.hidden_tag() }}
+            <fieldset>
+                <legend>Register</legend>
+                <div>
+                    {{ form.name.label() }}
+                    {{ form.name() }}
+                </div>
+                <div>
+                    {{ form.surname.label() }}
+                    {{ form.surname() }}
+                </div>
+                <div>
+                    {{ form.email.label() }}
+                    {{ form.email() }}
+                </div>
+                <div>
+                    {{ form.cellphone.label() }}
+                    {{ form.cellphone() }}
+                </div>
+                <div>
+                    {{ form.password.label() }}
+                    {{ form.password() }}
+                </div>
+                <div>
+                    {{ form.confirm_password.label() }}
+                    {{ form.confirm_password() }}
+                </div>
+            </fieldset>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

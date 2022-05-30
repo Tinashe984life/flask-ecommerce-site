@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="product-view">
+        <div>
+            <img class="p-view" src="{{ url_for('static', filename='images/nirvana.jpg') }}">
+        </div>
+        <div>
+            <h3>Nirvana Band Tee</h3>
+            <p>R400</p>
+            <h4>Description</h4>
+            <p>Nirvana Band Tee - In Utero Print</p>
+            <br>
+            <div>
+                <h3>Colour</h3>
+                <img class="colour-img" src="{{ url_for('static', filename='images/nirvana.jpg') }}">
+                <br>
+                <small>Black</small>
+            </div>
+            <br>
+            <div class="cart-form">
+                <form method="post">
+                    <input class="addtocart" type="submit" name="addtocart" value="add to cart">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

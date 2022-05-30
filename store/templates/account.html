@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Your Orders, {{ current_user.name }}</h3>
+<br>
+<table class="order-table">
+    <colgroup>
+        <col span="1" class="o-col1">
+        <col span="1" class="o-col2">
+        <col span="1" class="o-col3">
+    </colgroup>
+
+    <tbody>
+        <tr>
+            <th>Date Ordered    </th>
+            <th>Items</th>
+            <th>Total</th>
+        </tr>
+        {% for o in user_orders %}
+            <tr>
+                <td class="order">{{ o.date_created }}</td>
+                <td class="order">{{ o.items }}</td>
+                <td>R {{ o.order_total }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    
+</table>
+{% endblock %}

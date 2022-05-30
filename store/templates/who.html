@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="product-view">
+        <div>
+            <img class="p-view" src="{{ url_for('static', filename='images/thewho.jpg') }}">
+        </div>
+        <div>
+            <h3>The Who Band Tee</h3>
+            <p>R340</p>
+            <h4>Description</h4>
+            <p>The Who Band Vintage Tee - My Generation Print</p>
+            <br>
+            <div>
+                <h3>Colour</h3>
+                <img class="colour-img" src="{{ url_for('static', filename='images/thewho.jpg') }}">
+                <br>
+                <small>Black</small>
+            </div>
+            <br>
+            <div class="cart-form">
+                <form method="post">
+                    <input class="addtocart" type="submit" name="addtocart" value="add to cart">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

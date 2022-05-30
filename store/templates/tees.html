@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="content2">
+        <div class="products-container">
+            <ul class="products">
+                <li>
+                    <a href="{{ url_for('capetown') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/capetown.jpg') }}" > 
+                        <div class="nl"><small>Cape Town Tee  - </small><span class="price">R160</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('capetown2') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/capetown2.jpg') }}" > 
+                        <div class="nl"><small>Cape Town Tee  - </small><span class="price">R160</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('bronzeshirt1') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/bronzeshirt.jpg') }}" > 
+                        <div class="nl"><small>Bronze Tee - </small><span class="price">R250</span></div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="{{ url_for('bronzeshirt2') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/bronzeshirt2.jpg') }}" > 
+                        <div class="product-label nl"><small>Bronze Tee - </small><span class="price">R250</span></div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="{{ url_for('harleyshirt') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/harleyshirt.jpg') }}" >
+                        <div class="nl"><small>Harley Davidson Tee - </small><span class="price">R350</span><span class="sale">Sale</span></div> 
+                    </a>   
+                </li>
+                <li>
+                    <a href="{{ url_for('kiss') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/kiss.jpg') }}" >
+                        <div class="nl"><small>Kiss Band Tee - </small><span class="price">R300</span><span class="sale">Sale</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('popsmoke') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/popsmoke.jpg') }}" > 
+                        <div class="nl"><small>Pop Smoke Tee - </small><span class="price">R345</span></div>
+                    </a>                   
+                </li>       
+                <li>
+                    <a href="{{ url_for('retroplanet1') }}">
+                        <img class="product-img n" src="{{ url_for('static', filename='images/retroplanetcallahan.jpg') }}" >
+                        <div class="nl"><small>Retro Planet Tee - </small><span class="price">R360</span></div>
+                    </a>                     
+                </li>
+                <li>
+                    <a href="{{ url_for('retroplanet2') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/retroplanet.jpg') }}" >
+                        <div class="nl"><small>Retro Planet M.O.T.U - </small><span class="price">R360</span></div>
+                    </a>                     
+                </li>
+                
+                <li>
+                    <a href="{{ url_for('retroplanet3') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/retroplanetcolumbus.png') }}" >
+                        <div class="nl"><small>Retro Planet Columbus - </small><span class="price">R360</span></div>
+                    </a> 
+                </li>
+                <li>
+                    <a href="{{ url_for('shelby') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/shelbyyellow.jpg') }}" >
+                        <div class="nl"><small>Shelby Tee - </small><span class="price">R140</span></div>
+                    </a>             
+                </li>
+                <li>
+                    <a href="{{ url_for('kc') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/kc.jpg') }}" >
+                        <div class="nl"><small>Kansas City Tee - </small><span class="price">R160</span></div> 
+                    </a>             
+                </li>
+                <li>
+                    <a href="{{ url_for('kobe') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/kobe.jpg') }}" >
+                        <div class="nl"><small>Kobe Legend Tee - </small><span class="price">R400</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('nirvana') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/nirvana.jpg') }}" >
+                        <div class="nl"><small>Nirvana Tee - </small><span class="price">R400</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('photosynthesis') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/photosynthesis.jpg') }}" >
+                        <div class="nl"><small>Photosynthesis Tee - </small><span class="price">R140</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('peace') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/3daysofpeace.jpeg') }}" >
+                        <div class="nl"><small>3 Days of Peace Tee - </small><span class="price">R140</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('wheaties') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/wheatiesfootball.jpg') }}" >
+                        <div class="nl"><small>Wheaties Football Tee - </small><span class="price">R140</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('sugar') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/sugardaddy.jpg') }}" >
+                        <div class="nl"><small>Sugar Daddy Tee - </small><span class="price">R140</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('flannel') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/shirt.png') }}" >
+                        <div class="nl"><small>DG Flannel Shirt - </small><span class="price">R200</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('stones') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/thestones.jpg') }}" >
+                        <div class="nl"><small>The Stones Band Tee - </small><span class="price">R340</span></div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('who') }}">
+                        <img class="product-img" src="{{ url_for('static', filename='images/thewho.jpg') }}" >
+                        <div class="nl"><small>The Who Band Tee - </small><span class="price">R340</span></div> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
