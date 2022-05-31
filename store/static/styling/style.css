@@ -376,3 +376,11 @@ a{
 .o-col3{
     width: 3%;
 }
+
+.forms{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    left: 40%;
+}
