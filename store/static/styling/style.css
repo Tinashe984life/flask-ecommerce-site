@@ -1,6 +1,11 @@
 body{
     margin: 0px;
 }
+
+header{
+    width: 100%;
+}
+
 .cc{
     
     display: flex;
@@ -17,10 +22,9 @@ body{
 }
 
 .top img{
-    margin-top: -380px;
-    margin-left: -430px;
-    width: 2200px;
-    height: 1200px;
+    margin-top: -435px;
+    margin-left: -565px;
+    width: auto;
 }
 
 .nav-items{
@@ -383,4 +387,16 @@ a{
     align-items: center;
     margin-top: 50px;
     left: 40%;
+}
+
+@media all and (max-width: 500px) {
+    .top img{
+        margin-top: -435px;
+        margin-left: -565px;
+        width: auto;
+    }
+
+    header{
+        width: 100%;
+    }
 }
