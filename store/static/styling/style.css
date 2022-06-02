@@ -399,4 +399,24 @@ a{
     header{
         width: 100%;
     }
+
+    .banner3{
+        display: flex;
+        position: relative;
+        width: 100%;
+        background-color: rgba(0,0,0);
+        
+        padding: 30px;
+    }
+    
+    .nike3{
+        width: 200px;
+        height: auto;
+    }
+    
+    .shop-now1{
+        position: absolute;
+        top: -40px;
+        left: -100px;
+    }
 }
