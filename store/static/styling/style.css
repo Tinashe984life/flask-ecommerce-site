@@ -416,7 +416,13 @@ a{
     
     .shop-now1{
         position: absolute;
-        top: -40px;
+        top: -95px;
         left: -100px;
+    }
+
+    .content{
+        width: 90vw;
+        margin-left: 10px;
+        
     }
 }
