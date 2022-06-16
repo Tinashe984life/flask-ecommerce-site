@@ -192,6 +192,10 @@ a{
     padding: 8px;
 }
 
+.shopnow2:hover{
+    background-color: gold;
+}
+
 .banner4{
     position: relative;
     display: flex;
