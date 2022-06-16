@@ -504,6 +504,48 @@ def tees():
 def women():
     return render_template('women.html')
 
+@app.route('/women/zimmer', methods=['GET', 'POST'])
+def zimmer():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Zimmermann Summer Dress', description='White & Golden Leaf Print', price=350, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('zimmer.html', cartlenght=cartlength)
+    else:
+        return render_template('zimmer.html')
+
+@app.route('/women/floral1', methods=['GET', 'POST'])
+def floral1():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Floral Summer Dress', description='Aqua blue & rose floral print', price=290, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('floraldress.html', cartlenght=cartlength)
+    else:
+        return render_template('floraldress.html')
+
+@app.route('/women/polka', methods=['GET', 'POST'])
+def polka():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Polka Dot Summer Dress', description='Gold with white dots', price=220, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('summerdress.html', cartlenght=cartlength)
+    else:
+        return render_template('summerdress.html')
+
 
 @app.route('/cart')
 @login_required
