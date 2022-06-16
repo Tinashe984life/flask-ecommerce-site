@@ -19,9 +19,9 @@
                 
                 <a class="nav-item-logo" href="{{ url_for('home') }}"><h2>DILLIGAF</h2></a>
                 
-                <div class="nav-item-container">
+                <!--<div class="nav-item-container">
                     <a class="nav-item" href="#">Latest</a>
-                </div>
+                </div>-->
                 <div class="nav-item-container">
                     <a class="nav-item" href="{{ url_for('footwear') }}">Footwear</a>
                 </div>
@@ -34,12 +34,12 @@
                 <div class="nav-item-container">
                     <a class="nav-item" href="{{ url_for('tees') }}">Tees</a>
                 </div>
-                <div class="nav-item-container">
+                <!--<div class="nav-item-container">
                     <a class="nav-item" href="#">Sale</a>
-                </div>
-                <div class="nav-item-container">
+                </div>-->
+                <!--<div class="nav-item-container">
                     <a class="nav-item" href="#">Blog</a>
-                </div>
+                </div>-->
                 {% if current_user.is_authenticated %}
                 <div class="nav-item-container">
                     <div class="cc">
