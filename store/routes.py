@@ -502,7 +502,11 @@ def tees():
 
 @app.route('/women')
 def women():
-    return render_template('women.html')
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        return render_template('women.html', cartlength=cartlength)
+    else:
+        return render_template('women.html', title='Women')
 
 @app.route('/women/zimmer', methods=['GET', 'POST'])
 def zimmer():
@@ -514,7 +518,7 @@ def zimmer():
             db.session.commit()
             flash('Item successfully added to Cart!', 'success')
             return redirect(url_for('women'))
-        return render_template('zimmer.html', cartlenght=cartlength)
+        return render_template('zimmer.html', cartlength=cartlength)
     else:
         return render_template('zimmer.html')
 
@@ -528,7 +532,7 @@ def floral1():
             db.session.commit()
             flash('Item successfully added to Cart!', 'success')
             return redirect(url_for('women'))
-        return render_template('floraldress.html', cartlenght=cartlength)
+        return render_template('floraldress.html', cartlength=cartlength)
     else:
         return render_template('floraldress.html')
 
@@ -542,10 +546,93 @@ def polka():
             db.session.commit()
             flash('Item successfully added to Cart!', 'success')
             return redirect(url_for('women'))
-        return render_template('summerdress.html', cartlenght=cartlength)
+        return render_template('summerdress.html', cartlength=cartlength)
     else:
         return render_template('summerdress.html')
 
+@app.route('/women/floral2', methods=['GET', 'POST'])
+def floral2():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Floral Summer Dress', description='White with Rose Floral Print', price=300, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('floral2.html', cartlength=cartlength)
+    else:
+        return render_template('floral2.html')
+
+@app.route('/women/floral3', methods=['GET', 'POST'])
+def floral3():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Floral Summer Dress', description='White with Floral Print', price=325, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('floral3.html', cartlength=cartlength)
+    else:
+        return render_template('floral3.html')
+
+@app.route('/women/wintercoat1', methods=['GET', 'POST'])
+def wintercoat1():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Winter Fur Coat', description='Brown Fur Coat', price=360, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('wintercoat1.html', cartlength=cartlength)
+    else:
+        return render_template('wintercoat1.html')
+
+@app.route('/women/wintercoat2', methods=['GET', 'POST'])
+def wintercoat2():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Winter Fur Coat', description='Peach Fur Coat', price=340, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('wintercoat2.html', cartlength=cartlength)
+    else:
+        return render_template('wintercoat2.html')
+
+@app.route('/women/wintercoat3', methods=['GET', 'POST'])
+def wintercoat3():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Faux Fur Coat', description='Dark Brown Fur Coat', price=360, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('wintercoat3.html', cartlength=cartlength)
+    else:
+        return render_template('wintercoat3.html')
+    
+@app.route('/women/wintercoat4', methods=['GET', 'POST'])
+def wintercoat4():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Winter Fur Coat', description='Long Brown Fur Coat', price=590, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('wintercoat4.html', cartlength=cartlength)
+    else:
+        return render_template('wintercoat4.html')
 
 @app.route('/cart')
 @login_required

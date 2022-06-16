@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="product-view">
+        <div>
+            <img class="p-view" src="{{ url_for('static', filename='images/wintercoat.png') }}">
+        </div>
+        <div>
+            <h3>Winter Fur Coat</h3>
+            <p>R360</p>
+            <h4>Description</h4>
+            <p>Winter Fur Coat - Brown Fur Coat</p>
+            <br>
+            <div>
+                <h3>Colour</h3>
+                <img class="colour-img" src="{{ url_for('static', filename='images/wintercoat.png') }}">
+                <br>
+                <small>Brown</small>
+            </div>
+            <br>
+            <div class="cart-form">
+                <form method="post">
+                    <input class="addtocart" type="submit" name="addtocart" value="add to cart">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}
