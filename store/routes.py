@@ -634,6 +634,34 @@ def wintercoat4():
     else:
         return render_template('wintercoat4.html')
 
+@app.route('/women/leathercoat', methods=['GET', 'POST'])
+def leathercoat():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Helly Hansen Leather Coat', description='Black Leather Coat', price=630, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('leathercoat.html', cartlength=cartlength)
+    else:
+        return render_template('leathercoat.html')
+
+@app.route('/women/wintercoat5', methods=['GET', 'POST'])
+def wintercoat5():
+    if current_user.is_authenticated:
+        cartlength = len(current_user.products)
+        if request.method == 'POST':
+            cart = Cart(name='Shearling Faux Fur Coat', description='Black Fur Coat', price=590, user=current_user)
+            db.session.add(cart)
+            db.session.commit()
+            flash('Item successfully added to Cart!', 'success')
+            return redirect(url_for('women'))
+        return render_template('wintercoat5.html', cartlength=cartlength)
+    else:
+        return render_template('wintercoat5.html')
+
 @app.route('/cart')
 @login_required
 def cart():
@@ -691,7 +719,7 @@ def deleteitem(cart_id):
     db.session.delete(trash)
     db.session.commit()
     flash('Item deleted!', 'success')
-    return redirect(url_for('tees'))
+    return redirect(url_for('cart'))
 
 @app.route('/account')
 @login_required
