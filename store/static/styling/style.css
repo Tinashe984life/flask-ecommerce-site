@@ -9,6 +9,7 @@ header{
 footer{
     width: 100%;
     background-color: rgba(0,0,0, 0.5);
+    margin-bottom: 0px;
 }
 
 .contact{
@@ -420,11 +421,18 @@ a{
 }
 
 .forms{
-    position: fixed;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    left: 40%;
+    margin-left: 40%;
+}
+
+.reg{
+    padding-bottom: 10px;
+}
+
+.lin{
+    padding-bottom: 120px;    
 }
 
 @media all and (max-width: 500px) {
