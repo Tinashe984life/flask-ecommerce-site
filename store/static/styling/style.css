@@ -1,20 +1,19 @@
 body{
-    margin: 0px;
+    margin: 0;
 }
 
 header{
-    width: 100%;
+    width: 100vw;
 }
 
 footer{
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0,0,0, 0.5);
-    margin-bottom: 0px;
 }
 
 .contact{
     display: flex;
-    width: 90%;
+    width: 90vw;
     justify-content: space-between;
 }
 
@@ -27,12 +26,12 @@ footer{
 }
 
 .c-left{
-    margin-top: 10px;
-    margin-left: 90px;
+    margin-top: 1vw;
+    margin-left: 9vw;
 }
 
 .c-right{
-    margin-top: 30px;
+    margin-top: 3vw;
 }
 
 .cc{
@@ -40,37 +39,38 @@ footer{
     display: flex;
     margin: 0px;
     padding: 0px;
-    height: 30px;
+    height: 3vw;
 }
 
 
 .top{
     width: 100%;
-    height: 170px;
+    height: 12vw;
     overflow: hidden;
 }
 
 .top img{
-    
+    position: relative;
     width: 100%;
-    height: 100%;
+    top: -4vw;
+    left: -1vw;
 }
 
-/*.top img{
-    margin-top: -435px;
-    margin-left: -565px;
-    width: auto;
-}*/
+nav{
+    position: relative;
+    width: 95vw;
+    margin-left: 2vw;
+}
 
 .nav-items{
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin: 2vw;
     border-bottom: 1px solid black;
 }
 
 .nav-item-container{
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
 }
 
 .nav-item{
@@ -79,7 +79,7 @@ footer{
 }
 
 .nav-item:hover{
-    font-size: larger;
+    text-decoration: underline;
 }
 
 .nav-item-logo{
@@ -91,8 +91,9 @@ a{
 }
 
 .content{
-    width: 90vw;
-    margin-left: 50px;
+    width: 95vw;
+    margin-left: 2vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
     
 }
 
@@ -101,7 +102,7 @@ a{
     position: relative;
     overflow: hidden;
     white-space: nowrap;
-    width: 89vw;
+    width: 95vw;
 }
 
 
@@ -113,11 +114,13 @@ a{
 .banner-container2{
     display: flex;
     position: relative;
-    width: 89vw;
+    width: 95vw;
     overflow: hidden;
     overflow-y: hidden;
     white-space: nowrap;
 }
+
+
 
 .bronzeshirt{
     width: 300px;
@@ -136,11 +139,14 @@ a{
     height: auto;
 }
 
+.banner-container div img{
+    width: 20vw;
+    height: auto;
+}
+
 .banner{
     position: relative;
-    width: 89vw;
-    
-    
+    width: 95vw;
 }
 
 .banner2{
@@ -153,12 +159,16 @@ a{
 }
 
 .see-all{
-    margin-left: 10px;
-    padding-top: 10px;
+    margin-left: 1vw;
+    padding-top: 0.8vw;
+}
+
+.see-all:hover{
+    text-decoration: underline;
 }
 
 .banner-img-container{
-    margin-right: 20px;
+    margin-right: 2vw;
     animation-name: scroll;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -182,10 +192,9 @@ a{
 
 .banner3{
     display: flex;
-    width: 89vw;
+    width: 95vw;
     background-color: rgba(0,0,0);
-    
-    padding: 30px;
+    padding: 2vw;
 }
 
 .nike3{
@@ -214,17 +223,17 @@ a{
 
 .banner-header2{
     display: flex;
-    width: 89vw;
+    width: 90vw;
     color: white;
     background-color: black;
 }
 
 .shopnow2{
     position: relative;
-    left: 700px;
+    left: 40vw;
     background-color: white;
     border: 1px solid black;
-    padding: 8px;
+    padding: 1vw;
 }
 
 .shopnow2:hover{
@@ -234,23 +243,22 @@ a{
 .banner4{
     position: relative;
     display: flex;
-    width: 89vw;
+    width: 95w;
     height: 70vh;
     
 }
 
 .coatad-container{
-    width: 600px;
-    height: 400px;
+    width: 45vw;
+    height: 65vh;
     overflow: hidden;
     
 }
 
-
-
 .coatsad{
-    width: 600px;
-    margin-top: -50px;
+    width: 45vw;
+    margin-top: -3vw;
+    margin-left: 4vw;
     animation-name: scrollup;
     animation-duration: 60s;
     animation-iteration-count: infinite;
@@ -272,8 +280,8 @@ a{
 }
 
 .coatsad2{
-    width: 700px;
-    margin-left: 10px;
+    width: 45vw;
+    margin-left: 3vw;
     animation-name: scrollup2;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -296,7 +304,15 @@ a{
 
 .content2{
     position: relative;
-    width: 66vw;
+    width: 70vw;
+ 
+}
+
+.content2 h2{
+    margin-left: 2vw;
+    border-bottom: 2px solid black;
+    width: 93vw;
+    margin-bottom: 2vh;
 }
 
 .products{
@@ -307,18 +323,60 @@ a{
     list-style: none;
 }
 
-.product-img{
+.products li{
     width: 20vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.f-img-cont{
+    width: 20vw;
+    height: 20vw;
+    border-bottom: 0.4px solid rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.product-img{
+    width: 18vw;
+    height: 18vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
     height: auto;
 }
 
+#ld{
+    width: 13vw;
+    margin-left: 3vw;
+}
+
 .n{
-    margin-top: 28px;
+    margin-top: 1vh;
 }
 .nl{
     position: relative;
     bottom: 0px;
     padding: 0px;
+}
+
+label{
+    width: 10vw;
+}
+
+input{
+    width: 30vw;
+}
+
+form{
+    width: 32vw;
+    padding: 1vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+legend{
+    text-align: center;
+}
+
+form #submit{
+    margin-top: 1vw;
 }
 
 .product-label{
@@ -329,7 +387,7 @@ a{
     position: relative;
     color: red;
     font-weight: bold;
-    margin-left: 30px ;
+    margin-left: 2vw ;
 }
 .price{
     position: relative;
@@ -338,14 +396,15 @@ a{
 
 .product-view{
     display: flex;
+    margin-bottom: 10vh;
 }
 
 .p-view{
-    width: 600px;
+    width: 45vw;
 }
 
 .colour-img{
-    width: 90px;
+    width: 6vw;
 }
 
 .addtocart{
@@ -423,8 +482,8 @@ a{
 .forms{
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-left: 40%;
+    margin-top: 3vw;
+    margin-left: 35vw;
 }
 
 .reg{
@@ -435,7 +494,7 @@ a{
     padding-bottom: 120px;    
 }
 
-@media all and (max-width: 500px) {
+@media (max-width: 768px)  {
     /*.top img{
         margin-top: -435px;
         margin-left: -565px;
@@ -443,7 +502,7 @@ a{
     }*/
 
     header{
-        width: 100%;
+        width: 100vw;
     }
 
     .banner3{
@@ -462,8 +521,22 @@ a{
     
     .shop-now1{
         position: absolute;
-        top: -95px;
+        top: -13vw;
         left: -100px;
+    }
+
+    .shopnow2{
+        position: relative;
+        left: 0.2vw;
+        height: 18vw;
+    }
+
+    .banner-header2{
+        width: 90vw;
+    }
+
+    .banner4{
+        display: block;
     }
 
     .content{
@@ -471,4 +544,33 @@ a{
         margin-left: 10px;
         
     }
+    .banner-container{
+        width: 90vw;
+    }
+
+    .coatad-container{
+        width: 88vw;
+        height: 35vh;
+        overflow: hidden;
+
+    }
+    
+    .coatsad{
+        width: 88vw;
+        margin-top: -3vw;
+        margin-left: 2vw;
+        animation-name: scrollup;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    .coatsad2{
+        width: 88vw;
+        margin-left: 2vw;
+        animation-name: scrollup2;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
 }

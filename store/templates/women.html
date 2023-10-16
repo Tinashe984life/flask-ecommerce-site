@@ -2,75 +2,98 @@
 {% block content %}
     <div class="content2">
         <div class="products-container">
+            <h2>Women</h2>
             <ul class="products">
                 
                 <li>
                     <a href="{{ url_for('polka') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/summerdress.jpeg') }}" > 
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/summerdress.jpeg') }}" >
+                        </div>
                         <div class="nl"><small>Polka Dot Summer Dress - </small><span class="price">R220</span></div>
                     </a>
                 </li>
     
                 <li>
                     <a href="{{ url_for('floral1') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/floraldress.png') }}" >
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/floraldress.png') }}" >
+                        </div>
                         <div class="nl"><small>Floral Summer Dress - </small><span class="price">R290</span><span class="sale">Sale</span></div> 
                     </a>   
                 </li>
                 <li>
                     <a href="{{ url_for('zimmer') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/zimmermann mae amber palm.jpg') }}" > 
+                        <div class="f-img-cont">
+                            <img id="ld" class="product-img" src="{{ url_for('static', filename='images/zimmermann mae amber palm.jpg') }}" >
+                        </div> 
                         <div class="product-label nl"><small>Zimmermann Summer Dress - </small><span class="price">R350</span></div>
                     </a>
                     
                 </li>
                 <li>
                     <a href="{{ url_for('floral2') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/floraldress2.png') }}" >
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/floraldress2.png') }}" >
+                        </div>
                         <div class="nl"><small>Floral Summer Dress - </small><span class="price">R300</span><span class="sale">Sale</span></div>
                     </a>
                 </li>
                 <li>
                     <a href="{{ url_for('floral3') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/floraldress3.png') }}" > 
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/floraldress3.png') }}" >
+                        </div>
                         <div class="nl"><small>Floral Summer Dress - </small><span class="price">R325</span></div>
                     </a>                   
                 </li>       
                 <li>
                     <a href="{{ url_for('wintercoat1') }}">
-                        <img class="product-img n" src="{{ url_for('static', filename='images/wintercoat.png') }}" >
+                        <div class="f-img-cont">
+                            <img class="product-img n" src="{{ url_for('static', filename='images/wintercoat.png') }}" >
+                        </div>
                         <div class="nl"><small>Winter Fur Coat - </small><span class="price">R360</span></div>
                     </a>                     
                 </li>
                 <li>
                     <a href="{{ url_for('wintercoat2') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/wintercoat2.png') }}" >
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/wintercoat2.png') }}" >
+                        </div>
                         <div class="nl"><small>Winter Fur Coat - </small><span class="price">R340</span></div>
                     </a>                     
                 </li>
                 
                 <li>
                     <a href="{{ url_for('wintercoat3') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/fauxfurjacket.jpg') }}" >
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/fauxfurjacket.jpg') }}" >
+                        </div>
                         <div class="nl"><small>Faux Fur Coat - </small><span class="price">R360</span></div>
                     </a> 
                 </li>
                 <li>
                     <a href="{{ url_for('wintercoat4') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/furcoat.jpg') }}" >
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/furcoat.jpg') }}" >
+                        </div>
                         <div class="nl"><small>Winter Fur Coat - </small><span class="price">R590</span></div>
                     </a> 
                 </li>
                 <li>
                     <a href="{{ url_for('leathercoat') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/hellyhansencoat.png') }}" >
+                        <div class="f-img-cont">
+                            <img id="ld" class="product-img" src="{{ url_for('static', filename='images/hellyhansencoat.png') }}" >
+                        </div>
                         <div class="nl"><small>Helly Hansen Leather Coat - </small><span class="price">R630</span></div>
                     </a> 
                 </li>
                 
                 <li>
                     <a href="{{ url_for('wintercoat5') }}">
-                        <img class="product-img" src="{{ url_for('static', filename='images/shearling faux fur coat.jpg') }}" >
+                        <div class="f-img-cont">
+                            <img class="product-img" src="{{ url_for('static', filename='images/shearling faux fur coat.jpg') }}" >
+                        </div>      
                         <div class="nl"><small>Shearling Faux Fur Coat - </small><span class="price">R590</span></div>
                     </a> 
                 </li>
